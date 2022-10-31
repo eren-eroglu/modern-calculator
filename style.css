@@ -75,3 +75,12 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 .container > button:hover {
         opacity: 0.8;
 }
+
+.previous-operand {
+        color: rgba(255,255,255,0.7);
+        font-size: 16px;
+}
+
+.current-operand {
+        font-size: 28px;
+}

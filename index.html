@@ -11,30 +11,30 @@
 <body>
        <div class="design"> <div class="container">
                 
-                        <button class="span-two">+</button>
-                        <button class="b">=</button>
-                        <button class="span-two">-</button>
+                        <button id="+" data-operation class="span-two">+</button>
+                        <button  id="equal" data-equals class="b">=</button>
+                        <button id="-" data-operation class="span-two">-</button>
               
         <div class="output">
-                <div class="previous-operand"></div>
-                <div class="current-operand"></div>
+                
+                <div data-current-operand  id='display'class="current-operand"></div>
         </div>
         
-        <button>0</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>.</button>
-        <button>DEL</button>
-        <button>AC</button>
-        <button>÷</button>
-        <button>X</button>
+        <button id="0" data-number>0</button>
+        <button id="1" data-number>1</button>
+        <button id="2" data-number>2</button>
+        <button id="3" data-number>3</button>
+        <button id="4" data-number>4</button>
+        <button id="5" data-number>5</button>
+        <button id="6" data-number>6</button>
+        <button id="7" data-number>7</button>
+        <button id="8" data-number>8</button>
+        <button id="9" data-number>9</button>
+        <button data-number>.</button>
+        <button data-delete>DEL</button>
+        <button id="clear" data-all-clear>AC</button>
+        <button id="/" data-operation>÷</button>
+        <button id="*" data-operation>*</button>
 
         </div>
 </div>
