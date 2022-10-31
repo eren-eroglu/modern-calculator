@@ -4,31 +4,30 @@
         font-weight: normal;
 }
 
-body {
-        padding: 0;
-        margin: 0;
-        background: linear-gradient(to right, #ff0000, #3fc3fc);
+body, html {
+        height: 100vh;
 }
-
-.calculator-grid {
+body {
+        margin: 0;
         display: grid;
         justify-content: center;
+        align-items: center;
         align-content: center;
-        min-height: 100vh;
-        grid-template-columns: repeat(4, 100px);
-        grid-template-rows: minmax(120px,auto)repeat(5,100px);
-}
+        background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.calculator-grid > button {
-        cursor: pointer;
-        font-size: 2rem;
-        border: 1px solid rgba(211, 19, 125, 0.50);
-        outline: none;
-        background-color: rgba(255,255,255, .75);
 }
-
-.calculator-grid > button:hover {
-        background-color: rgba(255,255,255, .9);
+.container {
+        height: 500px;
+        width: 500px;
+        justify-content: center;
+        align-content: center;
+        
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows:    20% 20% 20% 20% 20%;
+        gap: 20px;
 }
 
 .span-two {
@@ -48,13 +47,31 @@ body {
         word-break: break-all;
 }
 
-.output .previous-operand {
-        color: rgba(255,255,255, .75);
-        font-size: 1.5rem;
+.design {
+        background: #c31432;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        height: 800px;
+        width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
 }
 
+.container > button {
+        cursor: pointer;
+        font-size: 2rem;
+        border: 2px solid rgba(3, 3, 3, 0.75);
+        outline: none;
+        background: #CC95C0;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
 
-.output .current-operand {
-        color: rgba(255,255,255, .75);
-        font-size: 3rem;
+}
+.container > button:hover {
+        opacity: 0.8;
 }
