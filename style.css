@@ -84,3 +84,16 @@ background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+
 .current-operand {
         font-size: 28px;
 }
+
+.dark-mode {
+       height: 100px;
+       width: 100px;
+       border-radius: 50%;
+       background-color: black;
+       color: white;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       cursor: pointer;
+
+}
